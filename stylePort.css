@@ -1,26 +1,30 @@
-  /* * {
-    box-sizing: border-box;
-}   */
+  :root {
+      --circuit: url(https://previews.123rf.com/images/grebeshkovmaxim/grebeshkovmaxim1805/grebeshkovmaxim180500461/100772701-computer-motherboard-background-with-circuit-board-electronic-elements-chip-electronic-pattern-for-c.jpg);
+      --chip: url(https://singularityhub.com/wp-content/uploads/2014/05/neurogrid_neuromorphic-computing.jpg);
+    }
+
 header{
     
     font-size: 30px;
     color:cornsilk;
-    background-image: url(https://previews.123rf.com/images/grebeshkovmaxim/grebeshkovmaxim1805/grebeshkovmaxim180500461/100772701-computer-motherboard-background-with-circuit-board-electronic-elements-chip-electronic-pattern-for-c.jpg);
+    background-image: var(--circuit);
     background-size: cover;
 }
 
 
-
-header nav {
+nav {
     display: flex;
     font-size: 24px;
     justify-content: space-around;
+    align-items: center;
+    background-image: var(--circuit);
+    background-size: cover;
 }
 
 nav a {
     padding: 14px, 20px;
     text-align: center;
-    color:cornsilk;
+    color:rgb(19, 18, 18);
 }
 
 #profile {
@@ -28,33 +32,63 @@ nav a {
     width: 230px;
     height: 200px;
     background-position: center; 
-    /* background-origin: border-box; */
     background-repeat: no-repeat;
     padding: 50px;
-    /* margin-left: 600px;  */
     border: 10px groove brown;
 }
 
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+}
 .righty {
     display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-     margin-left: 600px; 
-     /* width: 75%;  */
-     flex-wrap: wrap; 
+    flex-flow: column wrap;
+    align-items: space-between;
+    margin-left: 100px; 
+
     
    
    
 }
-.lefty {
+
+aside {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    column-gap: 90px;
-    padding: 10px;
-    width: 25%;
-    height: 100%;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    width: 30%;
     border-right: 5px solid blue;
+    font-weight: bolder;
 }
 
+#workload {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.p-card {
+    background-color: indigo;
+    position: relative;
+    width: 345px;
+    height: 120px;
+    margin: 10px;
+    flex: 33%;
+}
+a .p-card.uno {
+    width: 450px;
+    height: 320px;
+    flex: 100%;
+}
 
+h3 {
+   position: absolute;
+   bottom: 0;
+   background-color:rgb(89, 159, 182);
+}
+
+.p-card:hover {
+    color: red;
+    cursor: crosshair;
+    box-shadow: 10px 15px black;
+    opacity: 85%;
+}
