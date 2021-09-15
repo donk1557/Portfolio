@@ -5,20 +5,23 @@
 
 header{
     
-    font-size: 30px;
+    font-size: 50px;
     color:cornsilk;
     background-image: var(--circuit);
     background-size: cover;
+    margin-bottom: -40px;
+    margin-top: -60px;
 }
 
 
 nav {
     display: flex;
-    font-size: 24px;
+    font-size: 35px;
     justify-content: space-around;
     align-items: center;
-    background-image: var(--circuit);
+    background-image: var(--chip);
     background-size: cover;
+    margin-top: -67px;
 }
 
 nav a {
@@ -40,44 +43,41 @@ nav a {
 .side-by-side {
     display: flex;
     flex-direction: row;
+    align-items:flex-start;
 }
-.righty {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: space-between;
-    margin-left: 100px; 
 
+h2 {
     
-   
-   
+
 }
 
-aside {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    width: 30%;
-    border-right: 5px solid blue;
-    font-weight: bolder;
-}
 
-#workload {
+#workload, #bios, #contact-details {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-content: stretch;
+    padding: 20px;
+    margin-top: -65px;
+    margin-left: 15%;
+    margin-bottom: 70px;
+    border-left: 5px solid blue; 
+    margin-right: 15%;
 }
+
 .p-card {
-    background-color: indigo;
     position: relative;
-    width: 345px;
-    height: 120px;
+    height: 100px;
+    width: 310px;
+    background-image: var(--chip);
+    background-size: cover;
+    padding: 30px;
     margin: 10px;
-    flex: 33%;
+      
 }
-a .p-card.uno {
-    width: 450px;
+.p-card.uno {
     height: 320px;
-    flex: 100%;
+    width: 700px;
 }
 
 h3 {
@@ -91,4 +91,22 @@ h3 {
     cursor: crosshair;
     box-shadow: 10px 15px black;
     opacity: 85%;
-}
+} 
+
+@media screen and (max-width: 1050px) {
+    
+    .p-card {
+      width: 230px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+      color: yellow;
+    }
+    h2{
+        font-size: 100px;
+    }
+  }
