@@ -31,7 +31,7 @@ nav {
     margin-top: -67px;
     margin-left: -20px;
 }
-
+/* Stylization and glow effect for nav items */
 nav a {
     padding: 14px, 20px;
     text-align: center;
@@ -42,11 +42,11 @@ nav a {
 nav a:hover {
     border-radius: 7px;
     box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
-    background-color: rgb(216, 103, 216);
+    background-color: rgb(194, 95, 194);
     color: cornsilk;
     cursor: crosshair;
 }
-
+/* Code for placement of profile picture */
 #profile {
     background-image: var(--circuit);
     width: 230px;
@@ -56,7 +56,7 @@ nav a:hover {
     padding: 50px;
     border: 10px groove brown;
 }
-
+/* Formatting & stylization of sections in main */
 .side-by-side {
     display: flex;
     flex-direction: row;
@@ -83,7 +83,7 @@ h2 {
     border-left: 5px solid blue; 
     margin-right: 15%;
 }
-
+/* Code for the Application cards for stylization and interactivity */
 .p-card {
     position: relative;
     border: 2px solid rgb(189, 197, 199);
@@ -112,7 +112,7 @@ h3 {
     box-shadow: 10px 15px black;
     opacity: 85%;
 } 
-
+/* Sytlization for the Contact Me */
 #contact-details {
     justify-content:space-between;
     text-decoration: underline 3px black;
@@ -120,7 +120,7 @@ h3 {
     padding: 10px;
 
 }
-
+/* Resizing of site to fit different screens */
 @media screen and (max-width: 1050px) {
     
     .p-card {
