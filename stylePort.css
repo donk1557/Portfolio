@@ -196,6 +196,18 @@ h3 {
       color: orangered;
     }
     h2{
-        font-size: 20px;
+        font-size: 18px;
     } 
+    .p-card {
+        width: 200px;
+    }
+    .p-card.uno {
+        background-image: url(./assets/HalfwayImage.JPG);
+        height: 220px;
+        width: 330px;
+    }
+    #workload, #bios, #contact-details {
+        font-size: 15px;
+        margin-top: -45px;
+    }
   }
